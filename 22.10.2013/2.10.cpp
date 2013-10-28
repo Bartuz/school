@@ -16,6 +16,8 @@ int main(int argc, char *argv[]) {
 bool isPierwsza(int liczba){
 	for (int i = 2; i <= liczba/2; i++) {
 		if ( !(liczba%i)) {
+			21
+			21%7 !0 = 1
 			return false;
 		}
 	}

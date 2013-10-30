@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cmath>
 using namespace std;
 bool isPrime(int);
 int main(int argc, char *argv[]) {
@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
 		cout << "Nie";
 }
 bool isPrime(int liczba){
-	for (int i = 2; i <= liczba/2; i++) {
+	for (int i = 2; i <= sqrt(liczba); i++) {
 		if ( !(liczba%i) ) {
 			return false;
 		}

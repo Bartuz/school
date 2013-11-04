@@ -1,0 +1,9 @@
+
+sumaCiagu = 73
+dla dane5-1.txt maksymalna suma to 106
+
+sumaCiagu = -121
+dla dane5-2.txt maksymalna suma to 139
+
+sumaCiagu = -743
+dla dane5-3.txt maksymalna suma to 1342

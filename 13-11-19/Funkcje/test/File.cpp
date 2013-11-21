@@ -8,7 +8,12 @@
 
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
-
+#include <allegro5/allegro_font.h>
+#include <allegro5/allegro_ttf.h>
+#include <stdlib.h>
+#include <cstdlib>
+#include <string>
+#include <iostream>
 
 void rysuj_uklad_wspolrzednych();
 const int grubosc = 1.5;
@@ -23,11 +28,25 @@ const ALLEGRO_COLOR czarny = al_map_rgb_f(0, 0, 0);
 
 int main(int argc, char **argv) {
     al_init();
+//    al_init_font_addon();
+//    al_init_ttf_addon();
+//    al_init_primitives_addon();
+    const ALLEGRO_FONT *arial = al_load_ttf_font("arial.ttf", 12, 0);
+    if ( !( al_init_font_addon() &&
+        al_init_ttf_addon() &&
+        al_init_primitives_addon())) {
+        std::cout << "fail";
+    }
+    if (!arial) {
+        std::cout << "oh";
+        return 0;
+    }
     al_create_display(dlugosc, szerokosc);
     al_clear_to_color(czarny);
 //    for (int i = 50; i < 400; i+=3) {
 //        al_draw_pixel(i, 200+i, al_map_rgb_f(255, 255, 255) );
 //    }
+     al_draw_text(arial, bialy, 10, 10, 0, "asda"); // X
     rysuj_uklad_wspolrzednych();
     al_flip_display();
     al_rest(10.0);
@@ -46,6 +65,7 @@ void rysuj_uklad_wspolrzednych(){
         int grubosc_miary,szerokosc_miary, przerwa;
         przerwa = 25;
         if (i%2) {
+//            std::string text(std::to_string(20));
             grubosc_miary = 1.5;
             szerokosc_miary = 10;
         }

@@ -37,10 +37,6 @@ int main(int argc, char **argv) {
         al_init_primitives_addon())) {
         std::cout << "fail";
     }
-    if (!arial) {
-        std::cout << "oh";
-        return 0;
-    }
     al_create_display(dlugosc, szerokosc);
     al_clear_to_color(czarny);
 //    for (int i = 50; i < 400; i+=3) {

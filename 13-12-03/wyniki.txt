@@ -1,0 +1,4 @@
+19.75
+Sposob trapezowy. Obliczam pole kolejnych trapezow.
+C = 299
+wierchołki to kolejno: 199,-792; 199,396; 299,-792; 299,396

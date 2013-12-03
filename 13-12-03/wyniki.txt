@@ -1,4 +1,4 @@
 19.75
 Sposob trapezowy. Obliczam pole kolejnych trapezow.
 C = 130
-wierchołki to kolejno: 30,-18; 30,9.85; 130,-18; 130,9.85
+wierchołki to kolejno: 30,-18; 30,8; 130,8; 130,8

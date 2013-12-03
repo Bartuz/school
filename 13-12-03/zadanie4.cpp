@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
 		x++;
 		a = g(x) - f(x);
 	}
-	fout << "C = " << x+100 << endl << "wierchołki to kolejno: " << x << "," << f(x) << "; " << x << "," << g(x) << "; " << x+100 << "," << f(x) << "; " << x+100 << "," << g(x); 
+	fout << "C = " << x+100 << endl << "wierchołki to kolejno: " << x << "," << f(x) << "; " << x << "," << 26 + f(x) << "; " << x+100 << "," << 26 + f(x) << "; " << x+100 << "," <<  26 + f(x); 
 	fout.close();
 }
 double f(double x){

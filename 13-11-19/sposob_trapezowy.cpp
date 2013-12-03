@@ -1,9 +1,8 @@
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
-#include <callegro>
 using namespace std;
-const int LIMIT = 999;
+const int LIMIT = 9999;
 
 double f(double);
 void sort(double [][2]);

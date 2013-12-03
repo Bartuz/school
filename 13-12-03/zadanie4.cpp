@@ -20,11 +20,10 @@ int main(int argc, char *argv[]) {
 	fout << "Sposob trapezowy. Obliczam pole kolejnych trapezow." << endl;
 	a = 0;
 	x = 0;
-	while (a < 26 || !( (int(g(x)) == g(x)) && ( int(f(x)) == f(x)) ) ) {
-		a = g(x) - f(x);
+	while (a < 26 || !( (int(g(x)) == g(x)) || ( int(f(x)) == f(x)) ) ) {
 		x++;
+		a = g(x) - f(x);
 	}
-	x--;
 	fout << "C = " << x+100 << endl << "wierchołki to kolejno: " << x << "," << f(x) << "; " << x << "," << g(x) << "; " << x+100 << "," << f(x) << "; " << x+100 << "," << g(x); 
 	fout.close();
 }

@@ -44,13 +44,13 @@ int main(int argc, char **argv) {
     al_init_font_addon();
     al_init_ttf_addon();
     al_init_primitives_addon();
-//    const ALLEGRO_FONT *arial = al_load_ttf_font("arial.ttf", 12, 0);
+    const ALLEGRO_FONT *arial = al_load_ttf_font("arial.ttf", 12, 0);
     al_create_display(dlugosc, szerokosc);
     al_clear_to_color(czarny);
 //    for (int i = 50; i < 400; i+=3) {
 //        al_draw_pixel(i, 200+i, al_map_rgb_f(255, 255, 255) );
 //    }
-//     al_draw_text(arial, bialy, 10, 10, 0, "asda"); // X
+     al_draw_text(arial, bialy, 10, 10, 0, "asda"); // X
     int min, max;
     szukaj_min_max(min, max);
     rysuj_uklad_wspolrzednych();

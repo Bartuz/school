@@ -1,5 +1,5 @@
 a)	20
-b)	76
+b)	74
 c)	1989
 e)
 Lata	Ilość osób

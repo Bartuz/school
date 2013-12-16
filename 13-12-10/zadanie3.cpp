@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
 	}
 	fout << "Plik 2: " << temp;
 	fin.close();
-	fin.open("dane2.txt");
+	fin.open("dane3.txt");
 	fin >> file_number;
 	fin >> temp;
 	while (fin >> file_number) {

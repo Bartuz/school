@@ -255,4 +255,5 @@ e)
 | Beata              | Zabielana          | wos                |
 ----------------------------------------------------------------
 f)
-Barbara Ogrzewska 3.60
+imie	nazwisko	IDklasy	ŚredniaOfOcena
+Barbara	Ogoszewska	2d	3.6

@@ -1,0 +1,85 @@
+10 elementów
+F(10) = 10
+F(9) = 10 (20 < 15) FAŁSZA
+F(8) = 8 (11 < 15) PRAWDA
+F(7) = 7 (3 < 11) PRAWDA
+F(6) = 6 (2 < 11) PRAWDA 
+F(5) = 6 (7 < 2) FAŁSZ
+
+a) 
+10
+7
+6
+b)
+druga odpowiedź od i do n
+c)
+512
+d)
+
+int funckja(i){
+  int min,j = n;
+  min_index = n;
+  j--;
+  while(j >= i){
+    if (a[j] < a[min_index]){
+      min_index=j;
+    }
+    j--;
+  }
+}
+2)
+23 5 TAK
+- - NIE
+b)
+największa liczba którą uzyskamy przed dodanie kolejnych cyfr z 4liczbowej liczby to 36 ponieważ najwieksza 4cyfrową liczbą jest 9999. 
+c)
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+int main(){
+  int n;
+  cin >> n;
+  while(n < 1000 || n > 9999){
+    cin >>n;
+  }
+  int k,temp,wynik;
+  for (int sk = 1; sk <= 36; sk++){
+    k = n - i;
+    temp = k;
+    wynik = temp%10 + (temp%100)/10 + (temp%1000)/100 + (temp%10000)/1000;
+    if (wynik + sk == k) {
+      cout << k;
+      return 0;
+    }
+  }
+  cout << "NIE";
+  return 0;
+}
+3.
+a)
+P
+P
+F
+P
+b)
+F
+P
+P
+P
+c)
+F
+P
+F
+P 
+d)
+14 2
+P
+F
+F
+P
+e)
+P
+P
+P
+P
+
